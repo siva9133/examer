@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+	<link rel="stylesheet" href="assets/css/admin.css">
+	<link rel="stylesheet" href="assets/css/table.css">
+    <script src="table.js"></script>
+	<link rel="stylesheet" href="assets/css/register_admin.css">
+    <title>Welcome</title>
+    <style>
+        body {
+  	font-family: 'Lato', sans-serif;
+  	font-weight: 400;
+  	font-size: 16px;
+      margin: 0;
+
+  	line-height: 1.7;
+  	color: #eee;
+}
+
+.header {
+  	height: 100vh;
+  	background-image: 
+	  linear-gradient(to right bottom, 
+     rgba(00, 0, 0, 0.5),
+     rgba(0, 0, 0, 0.7)),
+     url('https://cdn.elearningindustry.com/wp-content/uploads/2016/05/top-10-books-every-college-student-read-1024x640.jpeg');
+  	
+	background-size: cover;
+  	background-position: top;
+  	position: relative;
+
+  	clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.brand-box {
+  	position: absolute;
+  	top: 40px;
+  	left: 40px;
+}
+
+.brand { font-size: 20px; }
+
+.text-box {
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	text-align: center;
+}
+
+.heading-primary {
+  	color: #fff;
+  	text-transform: uppercase;
+
+  	backface-visibility: hidden;
+  	margin-bottom: 30px;
+}
+
+.heading-primary-main {
+  	display: block;
+  	font-size: 26px;
+  	font-weight: 400;
+  	letter-spacing: 5px;
+}
+
+.heading-primary-sub {
+  	display: block;
+  	font-size: 18px;
+  	font-weight: 700;
+  	letter-spacing: 7.4px;
+}
+
+.btn:link,
+.btn:visited {
+  	text-transform: uppercase;
+  	text-decoration: none;
+  	padding: 10px 20px;
+  	display: inline-block;
+  	border-radius: 100px;
+  	transition: all .2s;
+  	position: relative;
+}
+
+.btn:hover {
+  	transform: translateY(-3px);
+  	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  	transform: translateY(-1px);
+  	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+  	background-color: #fff;
+  	color: #777;
+	font-size: 14px;
+}
+    </style>
+</head>
+<body>
+    <header class="header">
+		<div class="menu-btn" style="position:fixed;">
+			<i class="fas fa-bars"></i>
+		  </div>
+		  <div class="side-bar">
+			<div class="close-btn">
+			  <i class="fas fa-times"></i>
+			</div>
+			<div class="menu">
+			  <div class="item"><a href="http://localhost/examer/"><i class="fas fa-desktop"></i>Home</a></div>
+			  <div class="item"><a href="#"><i class="fas fa-info-circle"></i>About us</a></div>
+			  <div class="item"><a href="login.html"><i class="fas fa-sign-out-alt"></i>Login</a></div>
+			</div>
+		  </div>
+	  
+		  <script type="text/javascript">
+			$(document).ready(function () {
+			  //jquery for toggle sub menus
+			  $('.sub-btn').click(function () {
+				$(this).next('.sub-menu').slideToggle();
+				$(this).find('.dropdown').toggleClass('rotate');
+			  });
+	  
+			  //jquery for expand and collapse the sidebar
+			  $('.menu-btn').click(function () {
+				$('.side-bar').addClass('active');
+				$('.menu-btn').css("visibility", "hidden");
+			  });
+	  
+			  $('.close-btn').click(function () {
+				$('.side-bar').removeClass('active');
+				$('.menu-btn').css("visibility", "visible");
+			  });
+			});
+		  </script>
+        
+        <div class="text-box">
+            <h1 class="heading-primary">
+                <span class="heading-primary-main" style="font-size: 250%;">EXAM CUBE</span>
+                <span class="heading-primary-sub" style="font-size: 60%;">The best exam portal</span>
+            </h1>
+            <a href="login.html" class="btn btn-white btn-animated">Get Started</a>
+        </div>
+    </header>
+
+	  <footer class="footer">
+		<div class="container">
+		  <div class="row">
+			<div class="footer-col">
+			  <h4>company</h4>
+			  <ul>
+				<li><a href="#">about us</a></li>
+				<li><a href="#">our services</a></li>
+				<li><a href="#">privacy policy</a></li>
+				<li><a href="#">affiliate program</a></li>
+			  </ul>
+			</div>
+			<div class="footer-col">
+			  <h4>get help</h4>
+			  <ul>
+				<li><a href="#">FAQ</a></li>
+			  </ul>
+			</div>
+			<div class="footer-col">
+			  <h4>Contact us</h4>
+			  <div class="social-links">
+				<a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+				<a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+				<a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+				<a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+</body>
+</html>

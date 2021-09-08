@@ -1,0 +1,27 @@
+.textbox{
+    width: 60%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 1px 0;
+    margin: 5px 0;
+    border-bottom: 1px dotted black;
+}
+    
+.textbox input{
+    border: none;
+    outline: none;
+    background: none;
+    color: black;
+    font-size: 18px;
+    width: 100%;
+    margin: 5px;
+}
+
+table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+    
+th,td{
+    padding: 10px;
+}

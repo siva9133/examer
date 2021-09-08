@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style-table.css">
+    <script src="input-to-table.js"></script>
+</head>
+<body>
+    <div class="textbox">
+        <label for="question">Question:</label>
+        <input type="text" id="question" name="question" placeholder="Question">
+    </div>
+    <div class="textbox">
+        <input type="text" id="option-1" name="option-1" placeholder="option-1">
+    </div>
+    <div class="textbox">
+        <input type="text" id="option-2" name="option-2" placeholder="option-2">
+    </div>
+    <div class="textbox">
+        <input type="text" id="option-3" name="option-3" placeholder="option-3">
+    </div>
+    <div class="textbox">
+        <input type="text" id="option-4" name="option-4" placeholder="option-4">
+    </div>
+    <div class="textbox">
+        <input type="text" id="correct-answer" name="correct-answer" placeholder="correct-answer">
+    </div>
+    <button type="button" onclick="add();">Add</button><br><br>
+    <table id="table">
+        <thead>
+            <th>Question</th>
+            <th>Option-1</th>
+            <th>Option-2</th>
+            <th>Option-3</th>
+            <th>Option-4</th>
+            <th>Correct answer</th>
+        </thead>
+    </table><br><br>
+    <button type="button" onclick="remove();">Remove</button>
+</body>
+</html>
